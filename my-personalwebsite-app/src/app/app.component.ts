@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'William Simon';
+  bio = 'I am a recent graduate from Tufts University with a passion for understanding and developing quantum algorithms'
 }
