@@ -8,6 +8,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
+import { ResumeSectionComponent } from './resume-section/resume-section.component';
 
 const appRoutes: Routes = [
   { path: 'aboutme', component: AboutmeComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     AboutmeComponent,
     ResumeComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    ResumeSectionComponent
   ],
   imports: [
     RouterModule.forRoot(

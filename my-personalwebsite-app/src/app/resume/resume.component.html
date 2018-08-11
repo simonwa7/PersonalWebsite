@@ -2,9 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <h2 class="text-white mb-4">Resume <a href="assets/WilliamSimonResume.pdf" download><img src="assets/download.png" style="width: 5%;"></a></h2>
-         
-        <p class="text-white-50">Education</p>
+        <h2 class="text-white mb-4" style="text-align: center;">Resume <a href="assets/WilliamSimonResume.pdf" download><img src="assets/download.png" style="width: 5%;"></a></h2>
+        <app-resume-section [title]="'Education'" ></app-resume-section>
+        <app-resume-section [title]="'Work Experience'" ></app-resume-section>
+        <app-resume-section [title]="'Leadership Positions'" ></app-resume-section>
+        <app-resume-section [title]="'Skills and Technologies'" ></app-resume-section>
       </div>
     </div>
     <img src="img/ipad.png" class="img-fluid" alt="">
