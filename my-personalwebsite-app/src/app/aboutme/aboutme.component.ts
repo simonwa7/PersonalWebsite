@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent implements OnInit {
+	featured: string = 'Hiking';
 
   constructor() { }
 
   ngOnInit() {
+  	console.log(this.featured == 'Hiking');
+  }
+
+  toggle_featured(value){
+  	this.featured = value;
   }
 
 }

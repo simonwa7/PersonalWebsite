@@ -3,10 +3,64 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <h2 class="text-white mb-4">About Me</h2>
-        <p class="text-white-50">Place some stuff about me here</p>
+        <h2 class="text-white mb-4">Hobbies</h2>
       </div>
     </div>
-    <img src="img/ipad.png" class="img-fluid" alt="">
   </div>
+</section>
+
+<section id="hobbies" class="projects-section bg-light">
+  <div class="container">
+  		<div class="row">
+  			<div class="col-4">
+				<div (click)="toggle_featured('Hiking')" class="row align-items-center no-gutters mb-4 mb-lg-5">
+					<div class="featured-text text-center text-lg-left">
+						<h4>Hiking</h4>
+						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" style="width: 90%;">
+					</div>
+				</div>
+				<div (click)="toggle_featured('Frisbee')" class="row align-items-center no-gutters mb-4 mb-lg-5">
+					<div class="featured-text text-center text-lg-left">
+						<h4>Ultimate Frisbee</h4>
+						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" style="width: 90%;">
+					</div>
+				</div>
+			</div>
+			<div class="col-1">
+			</div>
+			<div class="col-7">
+				<div *ngIf="this.featured == 'Hiking'">
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+						</div>
+					</div>
+				</div>
+
+				<div *ngIf="this.featured == 'Frisbee'">
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
