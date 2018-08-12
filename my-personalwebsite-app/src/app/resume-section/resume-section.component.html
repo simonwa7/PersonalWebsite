@@ -1,3 +1,207 @@
-<h2 class="text-white-50">{{title}}</h2>
+<h2 class="text-white-50">{{title}} <img src="assets/caret.svg" style="width: 20px" (click)="toggle_show()"></h2>
+
+<hr class="style17">
+<div *ngIf="this.show">
+<div *ngIf="this.title == 'Education'">
+  <div class="col-auto">
+    <div class="card py-4 h-100" style="padding-bottom: 0%;">
+      <div class="card-body text-center" style="padding-bottom: 0%;">
+        <h5 class="text-uppercase m-0" style="text-align: left;">Tufts University</h5>
+        <hr class="my-4">
+        <div style="text-align: left;">
+        	B.S. Chemical Physics, Minor in Computer Science
+        	<br>
+        	Overall GPA: 3.76 | Major GPA: 3.85 | Minor GPA: 3.94 
+        	<br>
+        	Honors: Manga Cum Laude, Stern Scholar, Sigma Pi Sigma
+        	<br><br>
+        	Relevant Coursework:
+        	<br>
+    		<span style="padding-left: 5%;">Physics: Modern Physics, Solid State Physics, Quantum Theory, Experimental Modern Physics</span>
+    		<br>
+    		<span style="padding-left: 5%;">Chemistry: Advanced General Chemistry, Organic Chemistry, Physical Chemistry</span>
+    		<br>
+    		<span style="padding-left: 5%;">Mathematics: Multivariable Calculus, Linear Algebra, Differential Equations, Math Modeling, Real Analysis</span>
+    		<br>
+    		<span style="padding-left: 5%;">Computer Science: Algorithms, Data Structures, Web Programming, Discrete Math, Computational Theory</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="this.title == 'Work Experience'">
+  <div class="col-auto">
+    <div class="card py-4 h-100" style="padding-bottom: 0%;">
+      <div class="card-body text-center" style="padding-bottom: 0%;">
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+	        Tufts University, Quantum Chemistry and Computation Lab
+	        <span style="float: right;">Somerville, MA</span>
+	    </h6>
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+        	Research Assistant
+        	<span style="float: right;">June 2018 - Present</span>
+        </h6>
+        <hr class="my-4">
+        <div style="text-align: left;">
+        	<li>Designed interactions with High Performance Computing Cluster for Quantum Chemistry simulations of molecules up to 42 qubits</li>
+        	<li>Researched, implemented, and analyzed optimization algorithms for quantum circuits, accounting for time complexity and memory
+					allocation with worst-case and amortized analysis for circuits longer than 76 billion gates</li>
+        	<li>Benchmarked and compared performance of transforms, simulations, and optimization algorithms for large scale circuits</li>
+        	<li><span style="font-weight: bold;">Programming : </span>Python, C/C++, Cython, OpenFermion, qHipster, SVN</li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="col-auto">
+    <div class="card py-4 h-100" style="padding-bottom: 0%;">
+      <div class="card-body text-center" style="padding-bottom: 0%;">
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+	        Loyola University Chicago, School of Law
+	        <span style="float: right;">Chicago, IL</span>
+	    </h6>
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+        	Web Developer
+        	<span style="float: right;">Jan. 2018 - May 2018</span>
+        </h6>
+        <hr class="my-4">
+        <div style="text-align: left;">
+        	<li>Built website for the Stand Up For Each Other! initiative with incorporated automation for custom notification system</li>
+        	<li><span style="font-weight: bold;">Programming : </span>Node.Js , JavaScript , HTML5 , and CSS3</li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="col-auto">
+    <div class="card py-4 h-100" style="padding-bottom: 0%;">
+      <div class="card-body text-center" style="padding-bottom: 0%;">
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+	        Tufts University, Academic Technology
+	        <span style="float: right;">Somerville, MA</span>
+	    </h6>
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+        	Fellow
+        	<span style="float: right;">June 2017 - June 2018</span>
+        </h6>
+        <hr class="my-4">
+        <div style="text-align: left;">
+        	<li>Transitioned raw HTML designs to functioning website using Angular2 and Django frameworks in a fully modular system</li>
+        	<li>Developed capability for searching, filtering, and continuous rendering of various content</li>
+        	<li>Created predictive text functionality and custom result scoring system for searching based on Apache Solr and MongoDB</li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="col-auto">
+    <div class="card py-4 h-100" style="padding-bottom: 0%;">
+      <div class="card-body text-center" style="padding-bottom: 0%;">
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+	        Tufts University, Academic Resource Center
+	        <span style="float: right;">Medford, MA</span>
+	    </h6>
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+        	Tutor
+        	<span style="float: right;">June 2016 - July 2017</span>
+        </h6>
+        <hr class="my-4">
+        <div style="text-align: left;">
+        	<li>Interacted one on one with students to support and develop their understanding of concepts in Math, Chemistry, and Physics</li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="this.title == 'Leadership Positions'">
+  <div class="col-auto">
+    <div class="card py-4 h-100" style="padding-bottom: 0%;">
+      <div class="card-body text-center" style="padding-bottom: 0%;">
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+	        Tufts University, Men's Ultimate Frisbee Team
+	    </h6>
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+        	<span style="font-style: italic">Strategic Defensive Captain</span>
+        </h6>
+        <hr class="my-4">
+        <div style="text-align: left;">
+        	<li>Responsible for constructing and teaching theories and schemes while adapting to maximize player talents</li>
+        	<li>Developed code of conduct to hold players accountable for actions to drive constructive cultural change</li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="col-auto">
+    <div class="card py-4 h-100" style="padding-bottom: 0%;">
+      <div class="card-body text-center" style="padding-bottom: 0%;">
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+	        COMAP, Mathematical Contest in Modeling
+	    </h6>
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+        	<span style="font-style: italic">Team Leader - Successful Participant</span>
+        </h6>
+        <hr class="my-4">
+        <div style="text-align: left;">
+        	<li>Encouraged collaboration among a team in a competition to use current data to model growth and development of world languages</li>
+        	<li>Accounted for inherent drivers of language growth such as economic relationships, social media impact, and political influence</li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="this.title == 'Skills and Technologies'">
+  <div class="col-auto">
+    <div class="card py-4 h-100" style="padding-bottom: 0%;">
+      <div class="card-body text-center" style="padding-bottom: 0%;">
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+	        Tufts University, Men's Ultimate Frisbee Team
+	    </h6>
+        <h6 class="text-uppercase m-0" style="text-align: left;">
+        	<span style="font-style: italic">Strategic Defensive Captain</span>
+        </h6>
+        <hr class="my-4">
+        <div style="text-align: left;">
+        	<li>Responsible for constructing and teaching theories and schemes while adapting to maximize player talents</li>
+        	<li>Developed code of conduct to hold players accountable for actions to drive constructive cultural change</li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="col-auto">
+    <div class="card py-4 h-100" style="padding-bottom: 0%;">
+      <div class="card-body text-center" style="padding-bottom: 0%;">
+        <div style="text-align: left;">
+        	<span style="font-weight: bold;">Advanced Laboratory Techniques: </span>Vacuum tube operation, laser diffraction, liquid and gas chromatography, infrared spectroscopy, mass
+				spectroscopy, muon decay, positron annihilation, Compton observation, Millikan oil drop
+			<br>
+			<span style="font-weight: bold;">Technical Writing: </span>LaTeX, error propagation, technical presentations and reports
+			<br>
+			<span style="font-weight: bold;">Programming Languages: </span>C++, Python, JavaScript, TypeScript, HTML5, CSS3
+			<br>
+			<span style="font-weight: bold;">Software: </span>jQuery, Node.Js, Express.Js, MongoDB, Mathematica, Matlab, OpenFermion, Psi4, qHipster, Angular2, Django, Bootstrap
+			<br>
+			<span style="font-weight: bold;">Tooling: </span>Git, SVN, Linux, Unix, Heroku
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 <hr class="style17">
