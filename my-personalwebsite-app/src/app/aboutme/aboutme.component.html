@@ -16,13 +16,19 @@
 				<div (click)="toggle_featured('Hiking')" class="row align-items-center no-gutters mb-4 mb-lg-5">
 					<div class="featured-text text-center text-lg-left">
 						<h4>Hiking</h4>
-						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" style="width: 90%;">
+						<img class="img-fluid mb-3 mb-lg-0" src="assets/Hiking/icon.JPG" style="width: 75%;">
 					</div>
 				</div>
 				<div (click)="toggle_featured('Frisbee')" class="row align-items-center no-gutters mb-4 mb-lg-5">
 					<div class="featured-text text-center text-lg-left">
 						<h4>Ultimate Frisbee</h4>
-						<img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" style="width: 90%;">
+						<img class="img-fluid mb-3 mb-lg-0" src="assets/Frisbee/icon.jpg" style="width: 75%;">
+					</div>
+				</div>
+				<div (click)="toggle_featured('Photography')" class="row align-items-center no-gutters mb-4 mb-lg-5">
+					<div class="featured-text text-center text-lg-left">
+						<h4>Photography</h4>
+						<img class="img-fluid mb-3 mb-lg-0" src="assets/Photography/icon.JPG" style="width: 75%;">
 					</div>
 				</div>
 			</div>
@@ -32,33 +38,88 @@
 				<div *ngIf="this.featured == 'Hiking'">
 					<div class="row">
 						<div class="col-6">
-							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+							<img src="assets/Hiking/1.JPG" style="width: 90%;">
 						</div>
 						<div class="col-6">
-							<img src="assets/purpleflowers.JPG" style="width: 90%;">
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-6">
-							<img src="assets/purpleflowers.JPG" style="width: 90%;">
-						</div>
-						<div class="col-6">
-							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+							<img src="assets/Hiking/2.JPG" style="width: 90%;">
 						</div>
 					</div>
 					<br>
 					<div class="row">
 						<div class="col-6">
-							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+							<img src="assets/Hiking/3.JPG" style="width: 90%;">
 						</div>
 						<div class="col-6">
-							<img src="assets/purpleflowers.JPG" style="width: 90%;">
+							<img src="assets/Hiking/4.JPG" style="width: 90%;">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Hiking/5.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Hiking/6.JPG" style="width: 90%;">
 						</div>
 					</div>
 				</div>
 
 				<div *ngIf="this.featured == 'Frisbee'">
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Frisbee/1.jpg" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Frisbee/2.jpg" style="width: 90%;">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Frisbee/3.jpg" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Frisbee/4.jpg" style="width: 90%;">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Frisbee/5.jpg" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Frisbee/6.jpg" style="width: 90%;">
+						</div>
+					</div>
+				</div>
+
+				<div *ngIf="this.featured == 'Photography'">
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Photography/1.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Photography/2.JPG" style="width: 90%;">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Photography/3.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Photography/4.JPG" style="width: 90%;">
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Photography/5.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Photography/6.JPG" style="width: 90%;">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

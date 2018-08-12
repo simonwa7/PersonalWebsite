@@ -1,0 +1,26 @@
+<!-- Project Two Row -->
+<div class="row justify-content-center no-gutters">
+  <div class="col-lg-6">
+    <img class="img-fluid mb-3 mb-lg-0" src={{this.image}} alt="">
+  </div>
+  <div class="col-lg-6 order-lg-first">
+    <div class="bg-black text-center h-100 project">
+      <div class="d-flex h-100">
+        <div class="project-text w-100 my-auto text-center text-lg-right">
+          <h4 class="text-white">{{this.title}}
+            <a *ngIf="this.download" href={{this.link}} download>
+              <img src="assets/download.png" style="width: 7%;">
+            </a>
+
+            <a *ngIf=this.github href={{this.github}} class="mx-2">
+              <i class="fab fa-github"></i>
+            </a>
+          </h4>
+          <p class="mb-0 text-white-50">{{this.bio}}</p>
+          <hr class="d-none d-lg-block mb-0 mr-0">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>

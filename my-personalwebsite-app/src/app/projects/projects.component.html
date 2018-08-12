@@ -1,55 +1,26 @@
 <!-- Projects Section -->
+<section id="projectsheader" class="about-section text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="text-white mb-4">Projects</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="projects" class="projects-section bg-light">
   <div class="container">
 
-    <!-- Featured Project Row -->
-    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-      <div class="col-xl-8 col-lg-7">
-        <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-      </div>
-      <div class="col-xl-4 col-lg-5">
-        <div class="featured-text text-center text-lg-left">
-          <h4>Shoreline</h4>
-          <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-        </div>
-      </div>
-    </div>
+    <app-featured-project [title]="'COMAP - World Language Projections'" [bio]="'This project was part of the Mathematical Contest in Modeling. The goal was to predict the growth of languages around the world and their affects on a potential business plan. We considered influences such as: political ties, GDP and trade relations, immigration, and social media. Click to see the compiled 24 page report!'" [link]="'assets/Projects/MCMPaper'" [download]="true"></app-featured-project>
 
-    <!-- Project One Row -->
-    <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-      <div class="col-lg-6">
-        <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-      </div>
-      <div class="col-lg-6">
-        <div class="bg-black text-center h-100 project">
-          <div class="d-flex h-100">
-            <div class="project-text w-100 my-auto text-center text-lg-left">
-              <h4 class="text-white">Misty</h4>
-              <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-              <hr class="d-none d-lg-block mb-0 ml-0">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-nonfeatured-project [title]="'Technical Writing'" [bio]="'Here is a lab report from my Experimental Modern Physics Class. In this experiment, we examined the compton effect to determine the rest mass of an electron. Click to see more!'" [link]="'assets/Projects/Compton'" [download]="true"></app-nonfeatured-project>
 
-    <!-- Project Two Row -->
-    <div class="row justify-content-center no-gutters">
-      <div class="col-lg-6">
-        <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-      </div>
-      <div class="col-lg-6 order-lg-first">
-        <div class="bg-black text-center h-100 project">
-          <div class="d-flex h-100">
-            <div class="project-text w-100 my-auto text-center text-lg-right">
-              <h4 class="text-white">Mountains</h4>
-              <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-              <hr class="d-none d-lg-block mb-0 mr-0">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-featured-project [title]="'Twitter - An Analysis of Information Bubbles'" [bio]="'In this paper, an attempt was made to examine the existence of information bubbles using Twitter as a platform. We created a metric referred to as content similarity to analyze how similar a user was with their network and how that changed with varying degrees of separation. Click to see the final 10 page report!'" [link]="'assets/Projects/TwitterAnalysis'" [github]="'https://github.com/charlesrwinston/content_similarity'" [download]="true"></app-featured-project>
+
+    <app-nonfeatured-project [title]="'NotUber'" [bio]="'In a class, we were tasked with developing a website with similar functionality to Uber. This project entailed use of the Google Maps API and was meant as an introduction to using APIs. Sadly we do not have any drivers in our area :('" [link]="'assets/Projects/NotUber'" [github]="'https://github.com/simonwa7/comp20-wsimon/blob/master/notuber'" [download]="false"></app-nonfeatured-project>
+
+    <app-featured-project [title]="'NPRLocator'" [bio]="'Similar to the NotUber project, this was a simple project to display NPR radio stations in your area.'" [link]="'assets/Projects/NPRLocator'" [github]="'https://github.com/simonwa7/NPR-Locator'" [download]="false"></app-featured-project>
 
   </div>
 </section>

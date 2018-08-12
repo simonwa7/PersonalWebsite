@@ -9,6 +9,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeSectionComponent } from './resume-section/resume-section.component';
+import { FeaturedProjectComponent } from './featured-project/featured-project.component';
+import { NonfeaturedProjectComponent } from './nonfeatured-project/nonfeatured-project.component';
 
 const appRoutes: Routes = [
   { path: 'aboutme', component: AboutmeComponent },
@@ -28,7 +30,9 @@ const appRoutes: Routes = [
     ResumeComponent,
     ProjectsComponent,
     FooterComponent,
-    ResumeSectionComponent
+    ResumeSectionComponent,
+    FeaturedProjectComponent,
+    NonfeaturedProjectComponent
   ],
   imports: [
     RouterModule.forRoot(
