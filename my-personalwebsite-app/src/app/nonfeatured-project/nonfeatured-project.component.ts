@@ -11,6 +11,7 @@ export class NonfeaturedProjectComponent implements OnInit {
 	@Input('link')link: string;
 	@Input('github')github: string;
   @Input('download')download: string;
+  @Input('youtube')youtube: string;
 
 	image: string;
 
