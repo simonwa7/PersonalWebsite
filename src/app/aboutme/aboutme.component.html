@@ -13,19 +13,19 @@
   <div class="container">
   		<div class="row">
   			<div class="col-4">
-				<div (click)="toggle_featured('Hiking')" class="row align-items-center no-gutters mb-4 mb-lg-5">
+				<div (click)="toggle_featured('Hiking')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Hiking'}">
 					<div class="featured-text text-center text-lg-left">
 						<h4>Hiking</h4>
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Hiking/icon.JPG" style="width: 75%;">
 					</div>
 				</div>
-				<div (click)="toggle_featured('Frisbee')" class="row align-items-center no-gutters mb-4 mb-lg-5">
+				<div (click)="toggle_featured('Frisbee')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Frisbee'}">
 					<div class="featured-text text-center text-lg-left">
 						<h4>Ultimate Frisbee</h4>
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Frisbee/icon.jpg" style="width: 75%;">
 					</div>
 				</div>
-				<div (click)="toggle_featured('Photography')" class="row align-items-center no-gutters mb-4 mb-lg-5">
+				<div (click)="toggle_featured('Photography')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Photography'}">
 					<div class="featured-text text-center text-lg-left">
 						<h4>Photography</h4>
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Photography/icon.JPG" style="width: 75%;">
