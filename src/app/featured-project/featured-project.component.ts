@@ -11,6 +11,7 @@ export class FeaturedProjectComponent implements OnInit {
 	@Input('link') link: string;
   @Input('github')github: string;
   @Input('download')download: string;
+  @Input('show')show: boolean;
 
 	image: string;
 
@@ -19,6 +20,7 @@ export class FeaturedProjectComponent implements OnInit {
   ngOnInit() {
   		this.image = this.link + '.png';
   		this.link += '.pdf'
+      this.show = false;
   }
 
 }

@@ -13,6 +13,7 @@ export class NonfeaturedProjectComponent implements OnInit {
   @Input('download')download: string;
   @Input('youtube')youtube: string;
   @Input('gif')gif: string;
+  @Input('show')show: boolean;
 
 	image: string;
 
@@ -21,6 +22,7 @@ export class NonfeaturedProjectComponent implements OnInit {
   ngOnInit() {
   		this.image = this.link + '.png';
   		this.link += '.pdf'
+      this.show = false;
   }
 
 }

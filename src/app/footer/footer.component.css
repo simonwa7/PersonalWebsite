@@ -1,6 +1,13 @@
 .william_icon{
 	width: 30px;
 	height: 30px;
+	opacity: 0.5;
+	background-position: center;
+}
+
+.william_icon:hover{
+	opacity: 0.9;
+	color: #979797;
 }
 
 .william_footer{
