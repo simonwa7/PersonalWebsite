@@ -13,3 +13,21 @@
 .william_footer{
 	padding-bottom: 2%;
 }
+
+.william_text{
+	color: black;
+	font-size: 1em !important;
+}
+
+.william_email:hover{
+	color: #47a1cc;
+}
+
+.william_email{
+	color: black;
+}
+
+.william_line{
+	width: 12rem !important;
+	border-width: .15rem !important;
+}
