@@ -1,5 +1,9 @@
 
 hr.style17 {
-	border-top: 1px solid #8c8b8b;
+	border-top: 1px solid white;
 	text-align: center;
+}
+
+.william_resume_section_title{
+	color: white;
 }
