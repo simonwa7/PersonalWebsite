@@ -82,7 +82,10 @@
 
 .btn-primary:active{background-color:#467370!important}
 
-.about-section{padding-top:10rem;background:linear-gradient(to bottom,#161616 0,rgba(22,22,22,.9) 75%,rgba(22,22,22,.8) 100%)}
+.about-section{
+	padding-top:10rem;
+	background:linear-gradient(to top,#182944 0,rgba(22,22,22,.9) 100%,rgba(22,22,22,.8) 100%)
+}
 
 .about-section p{margin-bottom:5rem}
 

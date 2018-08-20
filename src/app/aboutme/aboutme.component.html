@@ -14,20 +14,20 @@
   		<div class="row">
   			<div class="col-4">
 				<div (click)="toggle_featured('Hiking')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Hiking', william_hobby: this.featured != 'Hiking'}">
-					<div class="featured-text text-center text-lg-left">
-						<h4 style="color:#47a1cc;">Hiking</h4>
+					<div class="text-center text-lg-left" [ngClass]="{william_featured_text: this.featured == 'Hiking', william_border: this.featured != 'Hiking'}">
+						<h4 [ngClass]="{william_active_text: this.featured == 'Hiking', william_text: this.featured != 'Hiking'}">Hiking</h4>
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Hiking/icon.JPG" style="width: 75%;">
 					</div>
 				</div>
 				<div (click)="toggle_featured('Frisbee')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Frisbee', william_hobby: this.featured != 'Frisbee'}">
-					<div class="featured-text text-center text-lg-left">
-						<a href="http://www.tuftsmensultimate.org/"><h4>Ultimate Frisbee</h4></a>
+					<div class="text-center text-lg-left" [ngClass]="{william_featured_text: this.featured == 'Frisbee', william_border: this.featured != 'Frisbee'}">
+						<a href="http://www.tuftsmensultimate.org/"><h4 [ngClass]="{william_active_text: this.featured == 'Frisbee', william_text: this.featured != 'Frisbee'}">Ultimate Frisbee</h4></a>
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Frisbee/icon.jpg" style="width: 75%;">
 					</div>
 				</div>
 				<div (click)="toggle_featured('Photography')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Photography', william_hobby: this.featured != 'Photography'}">
-					<div class="featured-text text-center text-lg-left">
-						<a  href="https://www.flickr.com/photos/143579198@N07/albums"><h4>Photography</h4></a>
+					<div class="text-center text-lg-left" [ngClass]="{william_featured_text: this.featured == 'Photography', william_border: this.featured != 'Photography'}">
+						<a  href="https://www.flickr.com/photos/143579198@N07/albums"><h4 [ngClass]="{william_active_text: this.featured == 'Photography', william_text: this.featured != 'Photography'}">Photography</h4></a>
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Photography/icon.JPG" style="width: 75%;">
 					</div>
 				</div>

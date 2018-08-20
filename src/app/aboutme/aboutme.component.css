@@ -1,7 +1,31 @@
 .william_active_hobby{
 	background-color: #10242d;
+	padding: 15px;
+}
+
+.william_hobby{
+	padding: 15px;
 }
  
 .william_hobby:hover{
 	background-color: #edf2f4;
+	padding: 15px;
+}
+
+.william_text{
+	color:#47a1cc;
+}
+
+.william_active_text{
+	color: white;
+}
+
+.william_featured_text{
+	padding:0 0 0 2rem;
+	border-left:.5rem solid white;
+}
+
+.william_border{
+	padding:0 0 0 2rem;
+	border-left:.5rem solid #47a1cc;
 }
