@@ -29,3 +29,11 @@
 	padding:0 0 0 2rem;
 	border-left:.5rem solid #47a1cc;
 }
+
+.william_icon{
+	width: 20px;
+}
+
+.william_icon:hover{
+	opacity: 0.5;
+}

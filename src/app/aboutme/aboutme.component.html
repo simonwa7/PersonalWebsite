@@ -21,13 +21,25 @@
 				</div>
 				<div (click)="toggle_featured('Frisbee')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Frisbee', william_hobby: this.featured != 'Frisbee'}">
 					<div class="text-center text-lg-left" [ngClass]="{william_featured_text: this.featured == 'Frisbee', william_border: this.featured != 'Frisbee'}">
-						<a href="http://www.tuftsmensultimate.org/"><h4 [ngClass]="{william_active_text: this.featured == 'Frisbee', william_text: this.featured != 'Frisbee'}">Ultimate Frisbee</h4></a>
+						<h4 [ngClass]="{william_active_text: this.featured == 'Frisbee', william_text: this.featured != 'Frisbee'}">
+							Ultimate Frisbee
+							<a href="http://www.tuftsmensultimate.org/" target="_blank">
+								<img *ngIf="this.featured == 'Frisbee'" src="assets/Dove2.jpg" class="william_icon">
+								<img *ngIf="this.featured != 'Frisbee'" src="assets/Dove.jpg" class="william_icon">
+							</a>
+						</h4>
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Frisbee/icon.jpg" style="width: 75%;">
 					</div>
 				</div>
 				<div (click)="toggle_featured('Photography')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Photography', william_hobby: this.featured != 'Photography'}">
 					<div class="text-center text-lg-left" [ngClass]="{william_featured_text: this.featured == 'Photography', william_border: this.featured != 'Photography'}">
-						<a  href="https://www.flickr.com/photos/143579198@N07/albums"><h4 [ngClass]="{william_active_text: this.featured == 'Photography', william_text: this.featured != 'Photography'}">Photography</h4></a>
+						<h4 [ngClass]="{william_active_text: this.featured == 'Photography', william_text: this.featured != 'Photography'}">
+							Photography
+							<a href="https://www.flickr.com/photos/143579198@N07/albums" target="_blank">
+								<img *ngIf="this.featured == 'Photography'" src="assets/Flickr-icon.png" class="william_icon">
+								<img *ngIf="this.featured != 'Photography'" src="assets/Flickr-icon.png" class="william_icon">
+							</a>
+						</h4>
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Photography/icon.JPG" style="width: 75%;">
 					</div>
 				</div>
