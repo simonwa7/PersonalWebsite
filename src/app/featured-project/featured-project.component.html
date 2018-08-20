@@ -3,7 +3,7 @@
   <div class="col-xl-8 col-lg-7">
     <img *ngIf="this.show" class="img-fluid mb-3 mb-lg-0" src={{this.image}} alt="">
   </div>
-  <div class="col-xl-4 col-lg-5 william_featured" (click)="this.show = !this.show">
+  <div class="col-xl-4 col-lg-5 william_featured william_padding" (click)="this.show = !this.show">
     <div class="featured-text text-center text-lg-left">
       <h4>{{this.title}}
       	<a *ngIf="this.download" href={{this.link}} download>
