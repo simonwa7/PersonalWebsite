@@ -1,3 +1,9 @@
-.william_nonfeatured:hover{
+.william_nonfeatured{
 	background-color: #10242d;
 }
+
+.william_nonfeatured:hover{
+	background-color: #182945;
+}
+
+/*#10242d*/
