@@ -1,4 +1,15 @@
-.william_icon{
-	width: 50px;
-	height: 10px;
+.william_nav{
+	background-color: #182945 !important;
+	opacity: 0.5;
+	height: 50px !important;
+}
+
+.william_page{
+	color: white !important;
+	opacity: .8;
+}
+
+.william_page:hover{
+	color: grey;
+	opacity: 1;
 }
