@@ -1,4 +1,9 @@
-.title{
-	text-align: center;
-	padding-top: 3%;
+.william_name{
+	-webkit-text-fill-color: white;
+	opacity: 0.55;
+}
+
+.william_bio{
+	-webkit-text-fill-color: white;
+	opacity: 0.75;
 }
