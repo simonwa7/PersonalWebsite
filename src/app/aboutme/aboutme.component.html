@@ -19,6 +19,42 @@
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Hiking/icon.JPG" style="width: 75%;">
 					</div>
 				</div>
+			</div>
+			<div class="col-1">
+			</div>
+			<div class="col-7">
+				<div *ngIf="this.featured == 'Hiking'">
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Hiking/1.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Hiking/2.JPG" style="width: 90%;">
+						</div>
+					</div>
+				</div>
+				<div *ngIf="this.featured == 'Frisbee'">
+					<div class="row mh1">
+						<div class="col-12">
+							<iframe width="95%" height="180px" src="https://www.youtube-nocookie.com/embed/7-ymT-MoGTc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div *ngIf="this.featured == 'Photography'">
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Photography/1.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Photography/2.JPG" style="width: 90%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-4">
 				<div (click)="toggle_featured('Frisbee')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Frisbee', william_hobby: this.featured != 'Frisbee'}">
 					<div class="text-center text-lg-left" [ngClass]="{william_featured_text: this.featured == 'Frisbee', william_border: this.featured != 'Frisbee'}">
 						<h4 [ngClass]="{william_active_text: this.featured == 'Frisbee', william_text: this.featured != 'Frisbee'}">
@@ -31,6 +67,45 @@
 						<img class="img-fluid mb-3 mb-lg-0" src="assets/Frisbee/icon.jpg" style="width: 75%;">
 					</div>
 				</div>
+			</div>
+			<div class="col-1">
+			</div>
+			<div class="col-7">
+				<div *ngIf="this.featured == 'Hiking'">
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Hiking/3.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Hiking/4.JPG" style="width: 90%;">
+						</div>
+					</div>
+				</div>
+				<div *ngIf="this.featured == 'Frisbee'">
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Frisbee/1.jpg" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Frisbee/4.jpg" style="width: 90%;">
+						</div>
+					</div>
+				</div>
+				<div *ngIf="this.featured == 'Photography'">
+					<div class="row">
+						<div class="col-6">
+							<img src="assets/Photography/3.JPG" style="width: 90%;">
+						</div>
+						<div class="col-6">
+							<img src="assets/Photography/4.JPG" style="width: 90%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-4">
 				<div (click)="toggle_featured('Photography')" class="william_hobby row align-items-center no-gutters mb-4 mb-lg-5" [ngClass]="{william_active_hobby: this.featured == 'Photography', william_hobby: this.featured != 'Photography'}">
 					<div class="text-center text-lg-left" [ngClass]="{william_featured_text: this.featured == 'Photography', william_border: this.featured != 'Photography'}">
 						<h4 [ngClass]="{william_active_text: this.featured == 'Photography', william_text: this.featured != 'Photography'}">
@@ -50,24 +125,6 @@
 				<div *ngIf="this.featured == 'Hiking'">
 					<div class="row">
 						<div class="col-6">
-							<img src="assets/Hiking/1.JPG" style="width: 90%;">
-						</div>
-						<div class="col-6">
-							<img src="assets/Hiking/2.JPG" style="width: 90%;">
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-6">
-							<img src="assets/Hiking/3.JPG" style="width: 90%;">
-						</div>
-						<div class="col-6">
-							<img src="assets/Hiking/4.JPG" style="width: 90%;">
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-6">
 							<img src="assets/Hiking/5.JPG" style="width: 90%;">
 						</div>
 						<div class="col-6">
@@ -75,23 +132,7 @@
 						</div>
 					</div>
 				</div>
-
 				<div *ngIf="this.featured == 'Frisbee'">
-					<div class="row mh1">
-						<div class="col-12">
-							<iframe width="95%" height="180px" src="https://www.youtube-nocookie.com/embed/7-ymT-MoGTc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-6">
-							<img src="assets/Frisbee/1.jpg" style="width: 90%;">
-						</div>
-						<div class="col-6">
-							<img src="assets/Frisbee/4.jpg" style="width: 90%;">
-						</div>
-					</div>
-					<br>
 					<div class="row">
 						<div class="col-6">
 							<img src="assets/Frisbee/5.jpg" style="width: 90%;">
@@ -101,26 +142,7 @@
 						</div>
 					</div>
 				</div>
-
 				<div *ngIf="this.featured == 'Photography'">
-					<div class="row">
-						<div class="col-6">
-							<img src="assets/Photography/1.JPG" style="width: 90%;">
-						</div>
-						<div class="col-6">
-							<img src="assets/Photography/2.JPG" style="width: 90%;">
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-6">
-							<img src="assets/Photography/3.JPG" style="width: 90%;">
-						</div>
-						<div class="col-6">
-							<img src="assets/Photography/4.JPG" style="width: 90%;">
-						</div>
-					</div>
-					<br>
 					<div class="row">
 						<div class="col-6">
 							<img src="assets/Photography/5.JPG" style="width: 90%;">
