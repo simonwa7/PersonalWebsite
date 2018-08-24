@@ -10,6 +10,7 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scrollTo({ left: 0, top: 750, behavior: "smooth" });
   }
 
 }

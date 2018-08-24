@@ -11,7 +11,7 @@ export class AboutmeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  	console.log(this.featured == 'Hiking');
+    window.scrollTo({ left: 0, top: 750, behavior: "smooth" });
   }
 
   toggle_featured(value){
