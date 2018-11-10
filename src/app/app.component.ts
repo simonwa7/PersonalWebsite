@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   firstname:string = 'William';
   lastname:string =  'Simon';
-  bio = 'I am a recent graduate from Tufts University with a passion for understanding and developing algorithms for quantum computation'
+  bio_line1 = 'I recently graduated Manga Cum Laude from Tufts University, majoring in Chemical Physics and minoring in Computer Science.'
+  bio_line2 = ' I have a passion for Software Engineering, Research, Data Science, Machine Learning, and Quantum Computing and I am looking to leverage the power of technology to solve the pressing issues currently facing humanity.'
 }
