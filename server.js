@@ -26,7 +26,7 @@ app.get('/classifier', function(req,res) {
 
 	    while(i<size){
 	        while(data[i]!="    "){
-	            console.log(data[i])
+	            console.log('data:', data[i])
 	            ++i;
 	        }
 	        break;
